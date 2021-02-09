@@ -25,15 +25,15 @@ window.addEventListener("mousemove", function(event){
 })
 
 function popUp(){
-    for(let i = 0; i < 3; i++){
+    for(let i = 0; i < 1; i++){
         let newelem = document.createElement("img");
         newelem.src = "nixon.jpg";
         newelem.style.position = 'absolute';
-        newelem.style.top = Math.random()*500 + 100;
-        newelem.style.left = Math.random()*500 + 100;
+        newelem.style.top = (Math.random()*500 + 100) + 'px';
+        newelem.style.left = (Math.random()*500 + 100) + 'px';
         newelem.style.width = "100px"
         newelem.style.height = "100px"
-        body.appendChild(newelem)
+        voting.appendChild(newelem)
     }
 }
 
